@@ -1,0 +1,186 @@
+---
+---
+
+// ============================================
+// STEP 1: Override Bootstrap variables FIRST
+// ============================================
+// Set your custom colors and settings BEFORE importing Bootstrap
+// This way Bootstrap compiles with your theme baked in
+
+$no-op: true;
+
+// CUSTOM VARIABLES - Add your project-specific overrides below
+$primary: #711111;
+$secondary: #3841c8;
+$body-color: #772800;
+$border-color: #c16a00;
+$darker-fire: darken($border-color, 10%);
+
+$body-bg: #5c71b3;
+$main-bg: #dcff71;
+$content-bg: #ffff71;
+$hunter-green: #083c0b;
+
+
+// ============================================
+// STEP 2: Import Bootstrap source
+// ============================================
+@import "bootstrap/bootstrap";
+
+// ============================================
+// STEP 3: Add your custom styles
+// ============================================
+
+// Default: xs (< 576px)
+$header-icon-size: 18px;
+#navbar-header {
+  h1 {
+    font-size: $header-icon-size + 4px;
+    line-height: 1;
+    color: $secondary;
+    &:hover {
+      color: $hunter-green;
+    }
+  }
+  h2 {
+    font-size: $header-icon-size;
+    color: $hunter-green;
+    line-height: 1;
+    padding: 0;
+    &:hover .boccaleone-link {
+      color: lighten($hunter-green, 10%);
+    }
+  }
+  
+}
+.icon-container {
+  width: $header-icon-size;
+  height: $header-icon-size;
+  background-color: $darker-fire;
+}
+.icon-img {
+  width: $header-icon-size - 6px;
+  height: $header-icon-size - 6px;
+  margin: -7px 0px 0px 3px;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  margin: 3px 6px 2px 3px;
+  font-family: $font-family-monospace;
+}
+
+h1, h2, h3 {
+  font-family: "Silkscreen", 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.main-container {
+  background-color: $main-bg;
+  filter: drop-shadow(6px 10px 0px $darker-fire);
+  overflow: hidden;
+}
+
+.headline {
+  font-family: "Silkscreen", 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-content {
+  margin: 1rem 0px 2rem;
+  padding: 2rem 1rem;
+  background-color: $content-bg;
+}
+
+// sm and up (>= 576px)
+@include media-breakpoint-up(sm) {
+  body {
+    margin: 0;
+  }
+  .main-container {
+    margin-top: 3rem;
+  }
+
+  $header-icon-size: 36px;
+  #navbar-header {
+    h1 {
+      font-size: $header-icon-size + 4px;
+    }
+    h2 {
+      font-size: $header-icon-size;
+    } 
+  }
+  .icon-container {
+    width: $header-icon-size;
+    height: $header-icon-size;
+    background-color: $darker-fire;
+  }
+  .icon-img {
+    width: $header-icon-size - 6px;
+    height: $header-icon-size - 6px;
+    margin: 2px 0px 0px 3px;
+  }
+}
+
+// md and up (>= 768px)
+@include media-breakpoint-up(md) {
+  $header-icon-size: 32px;
+  #navbar-header {
+    h1 {
+      font-size: $header-icon-size + 4px;
+    }
+    h2 {
+      font-size: $header-icon-size;
+    } 
+  }
+  .icon-container {
+    width: $header-icon-size;
+    height: $header-icon-size;
+    background-color: $darker-fire;
+  }
+  .icon-img {
+    width: $header-icon-size - 6px;
+    height: $header-icon-size - 6px;
+  }
+}
+
+// lg and up (>= 992px)
+@include media-breakpoint-up(lg) {
+  $header-icon-size: 40px;
+  #navbar-header {
+    h1 {
+      font-size: $header-icon-size + 4px;
+    }
+    h2 {
+      font-size: $header-icon-size;
+    } 
+  }
+  .icon-container {
+    width: $header-icon-size;
+    height: $header-icon-size;
+    background-color: $darker-fire;
+  }
+  .icon-img {
+    width: $header-icon-size - 6px;
+    height: $header-icon-size - 6px;
+  }
+}
+
+
+
+// .post-content {
+//   code {
+//     background-color: #f8f9fa;
+//     padding: 0.2rem 0.4rem;
+//     border-radius: 3px;
+//   }
+
+//   pre {
+//     background-color: #f8f9fa;
+//     border-radius: 3px;
+//     padding: 1rem;
+//   }
+// }

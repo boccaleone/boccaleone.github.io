@@ -2,5 +2,5 @@
 layout: home
 ---
 
-Tales of chaos & mayhem in technology
+Nothing to see, move along!
 
