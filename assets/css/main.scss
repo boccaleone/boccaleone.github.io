@@ -71,10 +71,16 @@ body {
   font-family: $font-family-monospace;
 }
 
+h4, h5, h6 {
+  font-weight: bold;
+}
 h1, h2, h3 {
-  font-family: "Silkscreen", 'Courier New', Courier, monospace;
-  font-weight: 400;
-  font-style: normal; 
+  font-family: "Martian Mono", 'Courier New', Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .main-container {
