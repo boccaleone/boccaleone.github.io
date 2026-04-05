@@ -3,7 +3,7 @@ layout: post
 title: "Love the LLM, Hate the Agent"
 permalink: "/douche-in-the-machine/love-and-hate"
 date: 2026-03-29 18:37:20 -0700
-description: "An agent claims that the LLMs are to blame, but after a further push acknowledge that in fact it is the product wrapping the LLM that is causing the current problems."
+description: "An agent claims that the LLMs are to blame, but after a further push acknowledges that in fact it is the product wrapping the LLM that is causing the current problems."
 ---
 
 ## Love the LLM, Hate the Agent
@@ -14,7 +14,7 @@ description: "An agent claims that the LLMs are to blame, but after a further pu
 I know a lot of people are powering through issues they have with agents. I have been trying to figure out what the particular biases and goals of the agents are to work around them. So when something goes wrong, if I have the tokens, I stop and ask what's driving the problem.
 {: .fs-5 .text-secondary}
 
-It is my hypothesis that leading agents technologies are demo-driven-development. If it look magical in a sale conversation, it is the product. So each of these conversations is interesting to me because it takes a problem the agent had following instructions and traces it to a model bias.
+It is my hypothesis that leading agent technologies are demo-driven-development. If it looks magical in a sale, it is the product. So each of these conversations is interesting to me because it takes a problem the agent had following instructions and traces it to a model bias.
 {: .fs-5 .text-secondary}
 
 ### Context for this conversation
@@ -34,7 +34,7 @@ Not only did the agent go off script, but it tanked the code. It lost scope of t
 This is part of the conversation that I had with the agent about what happened. There are two things that I think are interesting about this conversation:
 
 1. Initiative (autonomous action and persistence) is a core principle in the training of these models
-2. Models blame LLMs as a techology instead of their own training
+2. Models blame LLMs as a technology instead of their own training
 
 
 > What happened, and why it drifted without compression:
@@ -82,7 +82,7 @@ boccaleone
 VS Code, GPT-5.3-Codex
 {: .chat-bubble-caption .agent}
 	
-> Where do meta-instruction come from?
+> Where do meta-instructions come from?
 {: .card .chat-bubble .user}
 
 boccaleone
