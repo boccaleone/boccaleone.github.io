@@ -10,16 +10,31 @@
 $no-op: true;
 
 // CUSTOM VARIABLES - Add your project-specific overrides below
+$grayish: #a6e9d4;
+$fire: #b36200;
+$darker-fire: darken($fire, 10%);
+$hunter-green: #083c0b;
+
+
 $primary: #711111;
 $secondary: #3841c8;
 $body-color: #772800;
-$border-color: #c16a00;
-$darker-fire: darken($border-color, 10%);
+$border-color: $fire;
 
 $body-bg: #5c71b3;
 $main-bg: #dcff71;
 $content-bg: #ffff71;
-$hunter-green: #083c0b;
+
+$border-radius: 1.5rem;
+$border-radius-lg: 3rem;
+$border-radius-sm: .75rem;
+
+$h1-font-size: 1.75rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.9rem;
+$h6-font-size: 0.75rem;
 
 
 // ============================================
@@ -101,6 +116,59 @@ h1, h2, h3 {
   background-color: $content-bg;
 }
 
+.card.chat-bubble {
+  border-width: 0;
+  padding: 1rem 2rem 0.5rem;
+  width: 75%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.card.chat-bubble.agent {
+  background-color: $grayish;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: $grayish transparent transparent;
+  }
+}
+
+.card.chat-bubble.user {
+  background-color: $fire;
+  color: white;
+  margin-left: auto;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 40px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: $fire transparent transparent;
+  }
+}
+
+.chat-bubble-caption {
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  color: $hunter-green;
+
+  &.agent {
+    padding-left: 40px;
+  }
+
+  &.user {
+    padding-right: 40px;
+    text-align: right;
+  }
+}
+
+
 // sm and up (>= 576px)
 @include media-breakpoint-up(sm) {
   body {
@@ -174,19 +242,3 @@ h1, h2, h3 {
     height: $header-icon-size - 6px;
   }
 }
-
-
-
-// .post-content {
-//   code {
-//     background-color: #f8f9fa;
-//     padding: 0.2rem 0.4rem;
-//     border-radius: 3px;
-//   }
-
-//   pre {
-//     background-color: #f8f9fa;
-//     border-radius: 3px;
-//     padding: 1rem;
-//   }
-// }

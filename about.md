@@ -17,4 +17,4 @@ In the popular mind, the burning of Alexandria happened at the height of its pow
 
 ## About Boccaleone
 
-Boccaleone is an 8-bit whore in a 3-piece suit. Boccaleone is part of the fortune 500 grind and is ground. Boccaleone is old enough to recognize an assembly stack trace but didn't work with punch cards. Boccaleone loves LLMs and hates the current invocation of agents. Boccaleone is worried.
+Boccaleone is an 8-bit whore in a 3-piece suit. Boccaleone is part of the fortune 500 grind and is ground. Boccaleone is old enough to recognize an assembly stack trace and speaks douchebag as a second language. Boccaleone loves LLMs and hates agents. 

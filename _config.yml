@@ -14,6 +14,7 @@
 title: Alexandia Burns
 description: Chaos & mayhem in technology
 author: Boccaleone
+permalink: /:title/
 
 # Build settings
 # No theme - using custom layouts
