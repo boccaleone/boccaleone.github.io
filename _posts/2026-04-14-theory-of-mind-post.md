@@ -3,7 +3,7 @@ layout: post
 title: "Theory of mind"
 date: 2026-04-14 21:02:17 -0700
 permalink: "/theory-of-mind"
-description: ""
+description: "TLDR; Agents can't tell the difference between you and them"
 ---
 
 # Theory of mind
