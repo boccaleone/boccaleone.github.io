@@ -116,6 +116,14 @@ h1, h2, h3 {
   background-color: $content-bg;
 }
 
+.about-alexandria-image {
+  max-width: 300px;
+}
+
+.about-boccaleone-image {
+  max-width: 150px;
+}
+
 .card.chat-bubble {
   border-width: 0;
   padding: 1rem 2rem 0.5rem;
