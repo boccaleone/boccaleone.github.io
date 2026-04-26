@@ -6,18 +6,9 @@ date: 2026-03-29 18:37:20 -0700
 description: "An agent claims that the LLMs are to blame, but after a further push acknowledges that in fact it is the product wrapping the LLM that is causing the current problems."
 ---
 
-## Love the LLM, Hate the Agent
+# Love the LLM, Hate the Agent
 
-### About these conversations
-{: .mt-4 .text-secondary}
-
-I know a lot of people are powering through issues they have with agents. I have been trying to figure out what the particular biases and goals of the agents are to work around them. So when something goes wrong, if I have the tokens, I stop and ask what's driving the problem.
-{: .fs-5 .text-secondary}
-
-It is my hypothesis that leading agent technologies are demo-driven-development. If it looks magical in a sale, it is the product. So each of these conversations is interesting to me because it takes a problem the agent had following instructions and traces it to a model bias.
-{: .fs-5 .text-secondary}
-
-### Context for this conversation
+## Context for this conversation
 
 Because I have noticed that all the agents want to batch things and be more efficient, and that inevitably they fail at those efforts, I have been paying more and attempting to slow down the agent to prevent those classes of errors.
 
