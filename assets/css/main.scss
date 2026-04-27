@@ -116,6 +116,36 @@ h1, h2, h3 {
   background-color: $content-bg;
 }
 
+.newspaper-columns {
+  column-count: 1;
+  column-gap: 1.75rem;
+
+  h1 {
+    -webkit-column-span: all;
+    column-span: all;
+  }
+
+  img,
+  figure,
+  pre,
+  blockquote,
+  ul,
+  ol,
+  table {
+    break-inside: avoid;
+  }
+}
+
+.chat-columns {
+  column-count: 1;
+  column-gap: 1.5rem;
+
+  h1 {
+    -webkit-column-span: all;
+    column-span: all;
+  }
+}
+
 .about-alexandria-image {
   max-width: 300px;
 }
@@ -176,7 +206,6 @@ h1, h2, h3 {
   }
 }
 
-
 // sm and up (>= 576px)
 @include media-breakpoint-up(sm) {
   body {
@@ -209,6 +238,14 @@ h1, h2, h3 {
 
 // md and up (>= 768px)
 @include media-breakpoint-up(md) {
+  .newspaper-columns {
+    column-count: 2;
+  }
+
+  .chat-columns {
+    column-count: 2;
+  }
+
   $header-icon-size: 32px;
   #navbar-header {
     h1 {
@@ -231,6 +268,14 @@ h1, h2, h3 {
 
 // lg and up (>= 992px)
 @include media-breakpoint-up(lg) {
+  .newspaper-columns {
+    column-count: 3;
+  }
+
+  .chat-columns {
+    column-count: 2;
+  }
+
   $header-icon-size: 40px;
   #navbar-header {
     h1 {

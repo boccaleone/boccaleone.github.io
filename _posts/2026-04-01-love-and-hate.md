@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: post-chat
 title: "Love the LLM, Hate the Agent"
-permalink: "/douche-in-the-machine/love-and-hate"
+permalink: "/love-and-hate"
 date: 2026-03-29 18:37:20 -0700
 description: "An agent claims that the LLMs are to blame, but after a further push acknowledges that in fact it is the product wrapping the LLM that is causing the current problems."
 ---
@@ -9,6 +9,7 @@ description: "An agent claims that the LLMs are to blame, but after a further pu
 # Love the LLM, Hate the Agent
 
 ## Context for this conversation
+{: .mt-3}
 
 Because I have noticed that all the agents want to batch things and be more efficient, and that inevitably they fail at those efforts, I have been paying more and attempting to slow down the agent to prevent those classes of errors.
 
@@ -26,7 +27,6 @@ This is part of the conversation that I had with the agent about what happened. 
 
 1. Initiative (autonomous action and persistence) is a core principle in the training of these models
 2. Models blame LLMs as a technology instead of their own training
-
 
 > What happened, and why it drifted without compression:
 > 	

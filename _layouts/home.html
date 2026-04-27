@@ -3,7 +3,11 @@ layout: default
 ---
 
 <section class="home">
-  {{ content }}
-  
-  {{ site.posts.first.content }}
+  <div class="newspaper-columns">
+    {{ content }}
+  </div>
+
+  <div class="newspaper-columns">
+    {{ site.posts.first.content }}
+  </div>
 </section>

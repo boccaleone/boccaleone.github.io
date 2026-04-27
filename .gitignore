@@ -6,3 +6,4 @@ _site/
 .bundle/
 .venv/
 dev/**/*.py
+docs/**/*.md
