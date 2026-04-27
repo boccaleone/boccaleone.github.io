@@ -206,6 +206,23 @@ h1, h2, h3 {
   }
 }
 
+.home-layout {
+  position: relative;
+}
+
+.home-recent-posts {
+  color: $secondary;
+  margin-top: 1.5rem;
+
+  a {
+    color: $secondary;
+  }
+}
+
+.home-layout .newspaper-columns {
+  column-count: 1;
+}
+
 // sm and up (>= 576px)
 @include media-breakpoint-up(sm) {
   body {
@@ -238,6 +255,30 @@ h1, h2, h3 {
 
 // md and up (>= 768px)
 @include media-breakpoint-up(md) {
+  .home-layout {
+    padding-right: 15.5rem;
+  }
+
+  .home-layout .newspaper-columns {
+    column-count: 1;
+  }
+
+  .home-recent-posts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14.5rem;
+    margin-top: 0;
+  }
+
+  .post-chat.home-layout {
+    padding-right: 13rem;
+  }
+
+  .post-chat.home-layout .home-recent-posts {
+    width: 12rem;
+  }
+
   .newspaper-columns {
     column-count: 2;
   }
@@ -268,6 +309,26 @@ h1, h2, h3 {
 
 // lg and up (>= 992px)
 @include media-breakpoint-up(lg) {
+  .home-layout {
+    padding-right: 18.5rem;
+  }
+
+  .home-layout .newspaper-columns {
+    column-count: 2;
+  }
+
+  .home-recent-posts {
+    width: 17rem;
+  }
+
+  .post-chat.home-layout {
+    padding-right: 15rem;
+  }
+
+  .post-chat.home-layout .home-recent-posts {
+    width: 14rem;
+  }
+
   .newspaper-columns {
     column-count: 3;
   }
